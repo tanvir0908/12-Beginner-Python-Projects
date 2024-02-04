@@ -1,10 +1,17 @@
 import random
-from words import word_list
+# from words import word_list
 
+wordList = ["Apple", "Potato", "Orange"]
 
-def get_word():
-    word = random.choice(word_list)
-    return word.upper()
+# choose a random word from that word list
+chosenWord = random.choice(wordList)
 
+display = []
+for i in range(len(chosenWord)):
+    display += '_'
 
-print(get_word())
+print(chosenWord)
+print(display)
+
+# take user input
+guessedLetter = input("Guess a letter: ")
